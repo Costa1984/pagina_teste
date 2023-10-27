@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minha Página HTML para iOS</title>
+</head>
+<body>
+<h1>Olá, Mundo!</h1>
+<p>Esta é uma página HTML gerada por Python.</p>
+<label for="valor1">Valor 1:</label>
+<input type="text" id="valor1" name="valor1"><br><br>
+<label for="valor2">Valor 2:</label>
+<input type="text" id="valor2" name="valor2"><br><br>
+<button type="button" onclick="somarValores()">Botão 1</button><br><br>
+<div id="resultado"></div>
+</body>
+<script>
+function somarValores() {
+    var valor1 = parseFloat(document.getElementById("valor1").value);
+    var valor2 = parseFloat(document.getElementById("valor2").value);
+    var resultado = valor1 + valor2;
+    document.getElementById("resultado").textContent = "Resultado: " + resultado;
+}
+</script>
+</html>
